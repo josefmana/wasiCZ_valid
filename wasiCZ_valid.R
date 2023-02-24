@@ -94,3 +94,9 @@ ggpairs( d0[ , 5:9 ] )
 
 # save the correlation plot
 ggsave( "figs/wasiCZ_correlation_matrix.jpg", dpi = 300, width = 10.5, height = 11.7 )
+
+
+# ---- session info ----
+
+# write the sessionInfo() into a .txt file
+capture.output( sessionInfo(), file = "sess/wasiCZ_session_info.txt" )
